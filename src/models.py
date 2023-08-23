@@ -19,8 +19,6 @@ class User(Base):
     planet = relationship('Planet')
     Favorite = relationship('favorite')
     
-    
-
 class Favorite(Base):
     __tablename__ = 'favorite'
     id = Column(Integer, primary_key=True)
@@ -36,10 +34,6 @@ class Planet(Base):
     population = Column(String(50))
     galaxi = Column(String(50))
   
-
-
-
-
 class Character(Base):
     __tablename__ = 'character'
     id = Column(Integer, primary_key=True)
@@ -54,11 +48,6 @@ class Character(Base):
     
     
     
-
-
-
-
-
 
     def to_dict(self):
         return {}
